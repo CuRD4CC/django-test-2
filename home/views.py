@@ -3,7 +3,10 @@ from django.http import HttpResponse
 
 def inicio(request):
     return render(request,'home/index.html')
+
+def profesores(request):
+    return render(request,'home/index.html')
     
 
-def template(request):
-    return render(request, 'template.html')
+# def template(request):
+#     return render(request, 'template.html')
