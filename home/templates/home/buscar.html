@@ -1,17 +1,16 @@
 {% extends "base.html" %}
 
 {% block title_head %}
-Alumnos
+Buscar
 {% endblock title_head %}
 
 {% block h1_header %}
-Alumno/a
+Buscar en la base de datos
 {% endblock h1_header %}
 
 {% block content %}
-<form method="post">
-    {% csrf_token %}
+<form method="get">
     {{ form.as_p }}
-    <button type="submit">Guardar</button>
+    <button type="submit">Buscar</button>
 </form>
 {% endblock content %}
